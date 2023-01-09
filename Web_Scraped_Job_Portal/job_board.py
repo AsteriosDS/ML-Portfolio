@@ -11,19 +11,18 @@ import base64
 import folium
 from folium.plugins import HeatMap
 from streamlit_folium import st_folium
-from pathlib import Path
+import os
 
 
 # In[ ]:
 
-
-job_board_csv =r'ML-Portfolio/Web_Scraped_Job_Portal/job_board.csv'
-
+path = os.path.dirname(__file__)
+my_file = path+'/job_board.csv'
 
 # In[2]:
 
 
-df = pd.read_csv(job_board_csv)
+df = pd.read_csv(my_file)
 
 
 # In[3]:
