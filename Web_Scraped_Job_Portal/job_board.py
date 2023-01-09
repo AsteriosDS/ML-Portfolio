@@ -11,18 +11,19 @@ import base64
 import folium
 from folium.plugins import HeatMap
 from streamlit_folium import st_folium
-import os
+from pathlib import Path
 
 
 # In[ ]:
 
-path = os.path.dirname(__file__)
-my_file = path+'/job_board.csv'
+
+job_board_csv = Path(__file__).parents[1] / 'ML-Portfolio/Web_Scraped_Job_Portal/job_board.csv'
+
 
 # In[2]:
 
 
-df = pd.read_csv(my_file)
+df = pd.read_csv(job_board_csv)
 
 
 # In[3]:
@@ -111,7 +112,7 @@ st.header('The majority of the listings are in/near Athens')
 
 map = folium.Map(location=[37.983810, 23.727539], zoom_start=5, scrollWheelZoom=False, tiles='CartoDB positron')
 
-data = df_selected_jobs[['latitude','longitude']].dropna().to_numpy().tolist()
+data = df[['latitude','longitude']].dropna().to_numpy().tolist()
 
 HeatMap(data = data).add_to(map)
 
