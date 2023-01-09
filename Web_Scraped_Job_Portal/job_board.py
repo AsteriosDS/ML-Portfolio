@@ -92,7 +92,7 @@ st.markdown(filedownload(df_selected_jobs), unsafe_allow_html=True)
 # pie chart
 plt.figure(figsize=(5,3))
 plt.pie(x=df.groupby('categories').count()['company'],
-        explode=(0.02, 0.02, 0.02), autopct='%1.1f%%' , labels= df.groupby('categories').count()['company'].index, colors = ['#429EBD', '#9FE7F5','#053F5C'])
+        explode=(0.02, 0.02, 0.02), labels= df.groupby('categories').count()['company'].index, colors = ['#429EBD', '#9FE7F5','#053F5C'])
 
 # draw circle
 centre_circle = plt.Circle((0, 0), 0.70, fc='white')
