@@ -111,7 +111,7 @@ st.header('The majority of the listings are in/near Athens')
 
 map = folium.Map(location=[37.983810, 23.727539], zoom_start=5, scrollWheelZoom=False, tiles='CartoDB positron')
 
-data = df[['latitude','longitude']].dropna().to_numpy().tolist()
+data = df_selected_jobs[['latitude','longitude']].dropna().to_numpy().tolist()
 
 HeatMap(data = data).add_to(map)
 
