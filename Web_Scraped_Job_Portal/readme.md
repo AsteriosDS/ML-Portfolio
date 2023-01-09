@@ -11,7 +11,7 @@
 
 - Job Portal (Webscraping_postgress_cleaning).ipynb
 - job_board.csv
-- joab_board.py
+- job_board.py
 - requirements.txt
 
 ### Details:
