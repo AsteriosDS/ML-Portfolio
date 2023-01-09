@@ -17,7 +17,7 @@ from pathlib import Path
 # In[ ]:
 
 
-job_board_csv ='ML-Portfolio/Web_Scraped_Job_Portal/job_board.csv'
+job_board_csv =r'ML-Portfolio/Web_Scraped_Job_Portal/job_board.csv'
 
 
 # In[2]:
