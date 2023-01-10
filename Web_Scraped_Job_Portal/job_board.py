@@ -11,7 +11,6 @@ import base64
 import folium
 from folium.plugins import HeatMap
 from streamlit_folium import st_folium
-from pathlib import Path
 import os
 
 
