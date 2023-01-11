@@ -18,4 +18,4 @@
 1. #### **Job Portal (Webscraping_postgress_cleaning).ipynb** contains the web scraper, the functions built for accesing the database, pushing jobs into the database (only if they are new listings), fetching data from the database and cleaning it.
 2. #### **job_board.csv** is the csv file created by the aforementioned pipeline.
 3. #### **job_board.py** is the python file that the dashboard is built on.
-4. #### **requirements.txt** is the file with the environment requirements neede for Streamlit deployment.
+4. #### **requirements.txt** is the file with the environment requirements needed for Streamlit deployment.
